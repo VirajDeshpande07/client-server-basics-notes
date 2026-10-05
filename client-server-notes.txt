@@ -1,0 +1,71 @@
+# Client, Server and Database
+
+In a basic web application, the client, server and database work together.
+
+The simple flow is:
+
+**Client → Server → Database**
+
+and then the response comes back:
+
+**Database → Server → Client**
+
+## Client
+
+The client is basically what we use to interact with the application.
+
+For example:
+- Website
+- Mobile app
+- Browser
+
+When we want some data, the client sends a request to the server.
+
+---
+
+## Server
+
+The server is in the middle of everything.
+
+It receives the request from the client and decides what to do with it.
+
+If the server needs some data, it communicates with the database.
+
+After getting the required data, the server sends a response back to the client.
+
+So we can think of it like:
+
+**Client asks → Server handles → Database provides data → Server replies**
+
+---
+
+## Database
+
+The database is where the actual data is stored.
+
+For example, in a student management system, the database might contain:
+
+- Student names
+- Roll numbers
+- Marks
+- Courses
+- Attendance
+
+The client normally doesn't directly talk to the database.
+
+The server handles that communication.
+
+---
+
+# HTTP Methods
+
+When the client communicates with the server, we commonly use different HTTP methods.
+
+### GET
+
+Used when we want to **get/read something**.
+
+Example:
+
+```http
+GET /students
